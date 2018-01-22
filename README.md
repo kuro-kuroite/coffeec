@@ -111,7 +111,7 @@
 
 1. coffee to c
     ```Bash
-    $ npx coffee --output ./lib/es6/ --compile ./src
+    $ npx coffee --output ./lib/es6/ --compile --bare --no-header ./src
     $ npx babel ./lib/es6 --out-file lib/es5/script_compiled.js
     $ npx ts2c ./lib/es5/script_compiled.js
     $ mv ./lib/es5/script_compiled.c ./lib/c/
@@ -120,7 +120,7 @@
 1. gcc compile
     ```Bash
     $ gcc ./lib/c/script_compiled.c
-    $ mv ./lib/c/a.exe ./lib/exe/
+    $ mv ./a.exe ./lib/exe/
     ```
 
 本工程で./lib/c/script_compiled.c と ./lib/exe/a.exe をcoffeescript2 から生成
