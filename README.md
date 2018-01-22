@@ -120,7 +120,7 @@
 1. gcc compile
     ```Bash
     $ gcc ./lib/c/script_compiled.c
-    $ mv ./lib/c/a.exe ./lib/exe/
+    $ mv ./a.exe ./lib/exe/
     ```
 
 本工程で./lib/c/script_compiled.c と ./lib/exe/a.exe をcoffeescript2 から生成
