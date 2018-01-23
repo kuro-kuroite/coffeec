@@ -37,6 +37,10 @@
     git が入っていない場合 [coffeec](https://github.com/kuro-kuroite/coffeec/archive/master.zip) からzip ファイルをダウンロードする
     
 1. ./bin/build_env.ps1 をPowershell または ダブルクリックで実行し，coffeecを動かすツールをコンピュータにインストールする
+    ```Powershell
+    > cd ${APP_ROOT}
+    > ./bin/build_env.ps1
+    ```
 
 1. `git bash` で開いて，APP_ROOT(coffeec のルート)まで`cd` で移動する
     ```Powershell
