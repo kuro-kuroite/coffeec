@@ -93,7 +93,28 @@
     npx
     ```
 
-### coffeescript2 開発から C 変換の流れ
+### coffeescript2 から C 言語への変換
+
+1. APP_ROOT or APP_ROOT/bin に移動
+    ```Bash
+    $ cd ${APP_ROOT}
+    ```
+
+1. coffeec スクリプトの実行
+    ```Bash
+    $ pwd
+    ${APP_ROOT}
+    $ ./bin/coffeec.sh
+    ```
+
+    または，
+    ```Bash
+    $ pwd
+    ${APP_ROOT}/bin
+    $ ./coffeec.sh
+    ```
+
+#### coffeescript2 開発から C 変換の流れ
 
 1. 作業フォルダの作成
     ```Bash
