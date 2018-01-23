@@ -27,7 +27,62 @@
 * git Bash
 * npm
 
-### 環境構築
+### 環境構築(coffeec 版)
+
+1. coffeecを`git clone` する
+    ```Bash
+    $ git clone https://github.com/kuro-kuroite/coffeec.git .
+    ```
+
+    git が入っていない場合 [coffeec](https://github.com/kuro-kuroite/coffeec/archive/master.zip) からzip ファイルをダウンロードする
+    
+1. ./bin/build_env.ps1 をPowershell または ダブルクリックで実行し，coffeecを動かすツールをコンピュータにインストールする
+
+1. `git bash` で開いて，APP_ROOT(coffeec のルート)まで`cd` で移動する
+    ```Powershell
+    > git bash
+    ```
+
+    ```Bash
+    $ cd ${APP_ROOT}
+    ```
+
+1. init.sh で C 言語への変換ツールを「coffeec プロジェクト」に追加する
+    ```Bash
+    $ pwd
+    ${APP_ROOT}
+    $ ./bin/init.sh
+    ```
+
+### coffeescript2 から C 言語への変換
+
+1. APP_ROOT or APP_ROOT/bin に移動
+    ```Bash
+    $ cd ${APP_ROOT}
+    ```
+
+1. coffeec スクリプトの実行
+    ```Bash
+    $ pwd
+    ${APP_ROOT}
+    $ ./bin/coffeec.sh
+    ```
+
+    または，
+    ```Bash
+    $ pwd
+    ${APP_ROOT}/bin
+    $ ./coffeec.sh
+    ```
+
+本工程で./lib/c/script_compiled.c と ./lib/exe/a.exe をcoffeescript2 から生成
+
+
+## TL; DR coffeec の内部動作
+
+以下は，build_env.ps1, init.sh, coffeec.sh で行う処理が書かれている
+
+### 環境構築(スタンドアロン 版)
 
 1. Powershell で scoop のインストール
     ```Powershell
@@ -93,27 +148,6 @@
     $ npx
     ```
 
-### coffeescript2 から C 言語への変換
-
-1. APP_ROOT or APP_ROOT/bin に移動
-    ```Bash
-    $ cd ${APP_ROOT}
-    ```
-
-1. coffeec スクリプトの実行
-    ```Bash
-    $ pwd
-    ${APP_ROOT}
-    $ ./bin/coffeec.sh
-    ```
-
-    または，
-    ```Bash
-    $ pwd
-    ${APP_ROOT}/bin
-    $ ./coffeec.sh
-    ```
-
 #### coffeescript2 開発から C 変換の流れ
 
 1. 作業フォルダの作成
@@ -148,5 +182,3 @@
     $ gcc ./lib/c/script_compiled.c
     $ mv ./a.exe ./lib/exe/
     ```
-
-本工程で./lib/c/script_compiled.c と ./lib/exe/a.exe をcoffeescript2 から生成
