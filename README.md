@@ -130,6 +130,11 @@
     ChildClass.coffee
     ```
 
+1. lib ディレクトリ内にあるファイルから，余計に生成されないように全て除去する
+    ```Bash
+    $ rm -rf ./lib/**/*
+    ```
+
 1. coffee to c
     ```Bash
     $ npx coffee --output ./lib/es6/ --compile --bare --no-header ./src
