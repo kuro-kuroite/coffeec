@@ -59,8 +59,8 @@
 
 1. 任意のプロジェクトを作る
     ```Bash
-    mkdir hoge_project && cd $_
-    npm init -y
+    $ mkdir hoge_project && cd $_
+    $ npm init -y
     ```
 
 1. coffeescript2 のインストール
@@ -90,7 +90,7 @@
     ```
 1. npxを有効化
     ```Bash
-    npx
+    $ npx
     ```
 
 ### coffeescript2 から C 言語への変換
