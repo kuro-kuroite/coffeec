@@ -14,7 +14,7 @@ npm install --save-dev coffeescript && coffee -v
 npm install --save-dev babel-cli
 npm install --save-dev babel-preset-es2015
 
-echo '{ "presets": ["es2015"] }' >> .babelrc
+echo '{ "presets": ["es2015"] }' > .babelrc
 
 npm install --save-dev ts2c
 
