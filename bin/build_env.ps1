@@ -10,7 +10,11 @@ p"
 echo ${scoop_command} >> ~/.bashrc
 # source ~/.bashrc
 
-scoop install nvm
-nvm install && node -v
+# FIXME: nvm で最新のnode version を有効化する方法
+# scoop install nvm 
+# nvm install latest
+# nvm use vX.X.X
+# node -v
+scoop install nodejs
 
 scoop install gcc
