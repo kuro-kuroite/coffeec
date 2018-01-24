@@ -41,7 +41,7 @@
     > set-executionpolicy unrestricted -s cu
     ```
 
-1. ./bin/build_env.ps1 をPowershell または 「右クリック > Powershellで実行」 で実行し，coffeecを動かすツールをコンピュータにインストールする
+1. ./bin/build_env.ps1 をPowershell にドラッグ & ドロップ または 「右クリック > 編集 >> F5」 で実行し，coffeecを動かすツールをコンピュータにインストールする
     ```Powershell
     > cd ${APP_ROOT}
     > ./bin/build_env.ps1
