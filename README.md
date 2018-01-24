@@ -35,8 +35,13 @@
     ```
 
     git が入っていない場合 [coffeec](https://github.com/kuro-kuroite/coffeec/archive/master.zip) からzip ファイルをダウンロードする
-    
-1. ./bin/build_env.ps1 をPowershell または ダブルクリックで実行し，coffeecを動かすツールをコンピュータにインストールする
+
+1. Powershell の実行権限を追加する
+    ```Powershell
+    > set-executionpolicy unrestricted -s cu
+    ```
+
+1. ./bin/build_env.ps1 をPowershell または 「右クリック > Powershellで実行」 で実行し，coffeecを動かすツールをコンピュータにインストールする
     ```Powershell
     > cd ${APP_ROOT}
     > ./bin/build_env.ps1
