@@ -7,16 +7,8 @@ cd ./bin >& /dev/null
 cd ..
 
 
-npm init -y
-
-npm install --save-dev coffeescript && coffee -v
-
-npm install --save-dev babel-cli
-npm install --save-dev babel-preset-es2015
-
+# FIXME: .babelrc に既に書き込まれているが，毎回初期化しても変わらないため残すこととする
 echo '{ "presets": ["es2015"] }' > .babelrc
-
-npm install --save-dev ts2c
 
 npx
 npm install 
